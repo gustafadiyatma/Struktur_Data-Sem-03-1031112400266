@@ -1,4 +1,4 @@
-#include<iostream> //library untuk input dan output
+#include<iostream>
 
 using namespace std;
 
