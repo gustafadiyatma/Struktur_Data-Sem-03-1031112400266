@@ -46,7 +46,7 @@ Data jumlah buku per hari disimpan dalam sebuah array bernama bukuPerHari.
 Kemudian, melalui perulangan for, program menampilkan jumlah buku yang dibaca setiap hari dan secara bersamaan menghitung total keseluruhan buku yang dibaca selama seminggu.Sambil jalan, juga nambahin semua total buku ke variabel totalBuku, biar di akhir bisa ditampilin totalnya.
 
 **-Output-**
-![](Laprak02/outputguided/guided1.png)
+![](outputguided/guided1.png)
 
 
 ### 4.2 Guided 2
@@ -78,7 +78,7 @@ int main() {
 Program ini dipake untuk menampilkan harga produk dan memberikan diskon 10% menggunakan pointer.
 
 **-Output-**
-![](Laprak02/outputguided/guided2.png)
+![](outputguided/guided2.png)
 
 ### 4.3 Guided 3
 
@@ -127,7 +127,7 @@ Pertama, program menghitung rata-rata dari nilai tugas dan UTS menggunakan fungs
 Kemudian, fungsi beriNilaiBonus() menambah 5 poin pada nilai akhir dengan memanfaatkan referensi (pass by reference) agar nilainya benar-benar berubah.
 
 **-Output-**
-![](Laprak02/outputguided/guided3.png)
+![](outputguided/guided3.png)
 
 
 ## 5. Unguided
