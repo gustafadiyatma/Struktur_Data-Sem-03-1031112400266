@@ -9,6 +9,7 @@
 Supaya Saya bisa Struktur Data
 
 ## 3. Dasar Teori
+program ini mencakup konsep array, pointer, dan fungsi dalam bahasa C++. Array digunakan untuk menyimpan sekumpulan data dengan tipe yang sama, seperti data stok buku yang diakses menggunakan indeks. Pointer berfungsi untuk menyimpan alamat memori dari suatu variabel sehingga memungkinkan manipulasi data secara langsung di memori, seperti saat menambah stok melalui alamat elemen terkecil. Fungsi digunakan untuk membagi program menjadi bagian-bagian kecil yang memiliki tugas tertentu agar lebih terstruktur, misalnya fungsi untuk mencetak isi array, menghitung total stok, mencari stok paling sedikit, dan menambah bonus stok. Dengan menggabungkan array, pointer, dan fungsi, program dapat mengelola data secara efisien serta memodifikasi nilainya tanpa perlu menulis ulang kode di banyak tempat.
 
 ## 4. Guided
 ### 4.1 Guided 1
@@ -205,4 +206,5 @@ Program ini dipake untuk mengelola data stok buku memakai array dan pointer. Per
 
 ## 7. Referensi
 1. https://www.programiz.com/cpp-programming/online-compiler/
+
 2. https://www.onlinegdb.com/online_c++_compiler
