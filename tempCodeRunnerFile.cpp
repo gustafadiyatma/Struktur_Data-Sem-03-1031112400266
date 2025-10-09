@@ -1,24 +1,73 @@
 #include <iostream>
-#include <string>
 using namespace std;
 
-int main() {
-    int N;
-    cout << "Input N: ";
-    cin >> N;
-    cout << "output:" << endl;
+struct charML {
+   string nama;
+   charML *next;
+}*head, *tail, *curr;
 
-    for (int i = N; i >= 1; --i) {
-        for (int sp = 0; sp < N - i; ++sp) cout << " ";
-        for (int j = i; j >= 1; --j) cout << j;
-        cout << "*";
-        for (int k = 1; k <= i; ++k) cout << k;
-        cout << endl;
+void cariNama(string dicari) {
+    charML *leter = head;
+    charML *after = nullptr;
+
+    if (leter == nullptr) {
+        cout << "List kosong.\n";
+        return;
     }
 
-    // Baris terakhir
-    for (int sp = 0; sp < N; ++sp) cout << " ";
-    cout << "*" << endl;
+    do {
+        after = leter;
+        leter = leter->next;
+    } while (after != nullptr && after->nama != dicari);
+
+    if (after != nullptr && after->nama == dicari) {
+        cout << "Karakter ditemukan: " << after->nama << "\n";
+    } else {
+        cout << "Karakter '" << dicari << "' tidak ditemukan.\n";
+    }
+}
+
+int main(){
+    curr = new charML;
+    curr->nama = "baxia";
+    head = curr;
+    tail = curr;
+    
+    curr = new charML;
+    curr->nama = "alucrot";
+    tail->next = curr;
+    tail = curr; 
+
+    curr = new charML;
+    curr->nama = "hanzo sumedang";
+    tail->next = curr;
+    tail = curr;
+
+    curr = new charML;
+    curr->nama = "yve tasimalaya";
+    tail->next = curr;
+    tail = curr;
+
+    curr = new charML;
+    curr->nama = "Layla";
+    tail->next = curr;
+    tail = curr;
+
+    curr = new charML;
+    curr->nama = "cleret gombel";
+    tail->next = curr;
+    tail = curr;
+    tail->next = NULL;
+
+    curr = head;
+    while(curr != NULL){    
+        cout << curr->nama << "\n";
+        curr = curr->next;
+    }  
+    
+    cout << "\nHasil pencarian:\n";
+    cariNama("cleret gombel");
+    cariNama("Layla");
 
     return 0;
 }
