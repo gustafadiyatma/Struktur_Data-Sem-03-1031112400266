@@ -199,7 +199,7 @@ int main() {
 Program ini dibuat untuk mengelola stok buku dengan menggunakan array dan pointer. Program menampilkan stok awal, menghitung total stok, mencari buku dengan stok paling sedikit, lalu menambahkannya bonus 10. Setelah itu, stok buku ditampilkan kembali setelah diperbarui.
 
 **-Output-**
-![](Laprak02/outputunguided/unguided1.png)
+![](outputunguided/unguided1.png)
 
 ## 6. Kesimpulan
 Program ini dipake untuk mengelola data stok buku memakai array dan pointer. Pertama, program menampilkan daftar stok buku dari beberapa jenis. Setelah itu, program menghitung total keseluruhan stok dengan fungsi hitungTotalStok. terus, fungsi cariStokPalingSedikit digunakan untuk menemukan jenis buku dengan stok paling sedikit, dengan mengembalikan alamat memorinya (pointer). terus fungsi tambahStokBonus menambahkan bonus stok sebesar 10 ke buku yang stoknya paling sedikit melalui pointer tersebut.
@@ -208,3 +208,4 @@ Program ini dipake untuk mengelola data stok buku memakai array dan pointer. Per
 1. https://www.programiz.com/cpp-programming/online-compiler/
 
 2. https://www.onlinegdb.com/online_c++_compiler
+
