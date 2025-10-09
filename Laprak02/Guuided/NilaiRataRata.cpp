@@ -1,31 +1,31 @@
-#include<iostream>
-#include<string>
-
+#include <iostream>
+#include <string>
 using namespace std;
 
-float hitungRataRata(int nilaiTugas,int nilaiUTS){
-    return(nilaiTugas + nilaiUTS)/2.0f;
-}
-voidcetakProfil(string nama,float nilai){
-    cout<<"Nama:"<<nama<<endl;
-    cout<<"Nilai:"<<nilai<<endl;
+float hitungRataRata(int nilaiTugas, int nilaiUTS) {
+    return (nilaiTugas + nilaiUTS) / 2.0f;
 }
 
-void beriNilaiBonus(float &nilai){
-    nilai +=5.0f;
-
+void cetakProfil(string nama, float nilai) {
+    cout << "Nama: " << nama << endl;
+    cout << "Nilai: " << nilai << endl;
 }
-int main(){
-    string NamaSiswa ="Budi";
-    int tugas = 80,uts = 90;
 
-    float nilaiAkhir = hitungRataRata(tugas,uts);
+void beriNilaiBonus(float &nilai) {
+    nilai += 5.0f;
+}
 
-    cout<<"\nMemberikan nilai bonus..."<<endl;
-    beriNilaiBonus(nilaiAkhir);0
+int main() {
+    string NamaSiswa = "Budi";
+    int tugas = 80, uts = 90;
 
-    cout<<"\nProfil setelah Bonus"<<endl;
-    voidcetakProfil(NamaSiswa,nilaiAkhir);
+    float nilaiAkhir = hitungRataRata(tugas, uts);
+
+    cout << "\nMemberikan nilai bonus..." << endl;
+    beriNilaiBonus(nilaiAkhir);
+
+    cout << "\nProfil setelah Bonus" << endl;
+    cetakProfil(NamaSiswa, nilaiAkhir);
 
     return 0;
 }

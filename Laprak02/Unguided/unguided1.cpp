@@ -2,10 +2,11 @@
 using namespace std;
 
 void cetakStok(int arr[], int size) {
-    cout <<"[";
+    cout << "[";
     for (int i = 0; i < size; i++) {
-        cout << arr[i] << (i < size - 1 ? " " : ",");
-}
+        cout << arr[i];
+        if (i < size - 1) cout << " ";
+    }
     cout << "]" << endl;
 }
 
@@ -27,18 +28,19 @@ int* cariStokPalingSedikit(int arr[], int size) {
     return ptrPalingSedikit;
 }
 
-void tambahStokBonus(int* ptrStok){
+void tambahStokBonus(int* ptrStok) {
     *ptrStok += 10;
 }
+
 int main() {
-    int stokBuku[] = {12,8,25,5,18};
+    int stokBuku[] = {12, 8, 25, 5, 18};
     int jumlahJenisBuku = 5;
-    
-    cout <<"Stok Buku Awal: " <<endl;
+
+    cout << "Stok Buku Awal:" << endl;
     cetakStok(stokBuku, jumlahJenisBuku);
 
     int total = hitungTotalStok(stokBuku, jumlahJenisBuku);
-    cout <<"Total semua Stok Buku: " << total << endl;
+    cout << "Total semua Stok Buku: " << total << endl;
 
     int* ptrStokRendah = cariStokPalingSedikit(stokBuku, jumlahJenisBuku);
     tambahStokBonus(ptrStokRendah);
@@ -46,5 +48,5 @@ int main() {
     cout << "\nStok Buku Setelah Penambahan Bonus:" << endl;
     cetakStok(stokBuku, jumlahJenisBuku);
 
-    return 0;
+    return 0;
 }
