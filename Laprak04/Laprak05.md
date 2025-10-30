@@ -114,7 +114,7 @@ Program ini adalah implementasi dari Double Linked List (DLL) dalam bahasa C++.
 Double Linked List adalah struktur data berantai dua arah, di mana setiap elemen (node) memiliki penunjuk ke elemen sebelumnya (prev) dan penunjuk ke elemen berikutnya (next).
 
 **-Output-**
-![](output/guided1.png)
+![](Output/guided1.png)
 
 
 ### 4.2 Guided 2
@@ -766,4 +766,5 @@ kesimpulannya saya dapat memahami sebagian awalan materi pemrograman mengggunaka
 ## 7. Referensi
 1. https://www.programiz.com/cpp-programming/online-compiler/
 2. https://www.onlinegdb.com/online_c++_compiler
+
 
