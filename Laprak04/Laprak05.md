@@ -186,7 +186,7 @@ Program ini adalah implementasi struktur data Double Linked List (daftar beranta
 Double Linked List memungkinkan kita bergerak maju dan mundur melalui data karena tiap node punya dua pointer
 
 **-Output-**
-![](output/guided2.png)
+![](Output/guided2.png)
 
 
 ## 5. Unguided
@@ -382,7 +382,7 @@ int main() {
 **-Penjelasan Umum-**
 Fungsi insertBefore menyisipkan node baru (P) sebelum node acuan (Q), menangani kasus khusus jika Q adalah elemen pertama (L.first). Sementara itu, fungsi printReverse memanfaatkan pointer prev dalam Doubly Linked List dengan memulai traversal dari L.last dan bergerak mundur untuk mencetak urutan terbalik.
 **-Output-**
-![](output/unguided1.png)
+![](Output/unguided1.png)
 
 
 ### 5.2 Unguided 2
@@ -596,7 +596,7 @@ int main() {
 deleteByValue mencari kemunculan pertama nilai x; jika ditemukan, node tersebut dikeluarkan dari list dengan menghubungkan node sebelum dan sesudahnya, lalu di-dealokasi. Fungsi deleteAll menghapus semua elemen secara berurutan, berulang kali memanggil logika penghapusan elemen pertama (deleteFirst) dan melakukan dealokasi hingga list benar-benar kosong.
 
 **-Output-**
-![](output/unguided2.png)
+![](Output/unguided2.png)
 
 
 
@@ -758,7 +758,7 @@ int main() {
 smartInsert menyisipkan node baru berdasarkan empat kondisi kompleks: disisipkan di first jika list kosong atau nilainya terkecil; di last jika genap atau nilainya terbesar; dan disisipkan di tengah secara terurut jika ganjil. Sementara itu, conditionalDelete menghapus semua node yang memenuhi kondisi ganjil atau genap tertentu sambil mempertahankan struktur list.
 
 **-Output-**
-![](output/unguided3.png)
+![](Output/unguided3.png)
 
 ## 6. Kesimpulan
 kesimpulannya saya dapat memahami sebagian awalan materi pemrograman mengggunakan bahasa c++ karena ini saya pertama kalinya mengenal bahasa c++
@@ -766,5 +766,6 @@ kesimpulannya saya dapat memahami sebagian awalan materi pemrograman mengggunaka
 ## 7. Referensi
 1. https://www.programiz.com/cpp-programming/online-compiler/
 2. https://www.onlinegdb.com/online_c++_compiler
+
 
 
