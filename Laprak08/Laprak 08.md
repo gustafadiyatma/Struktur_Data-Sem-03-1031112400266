@@ -162,7 +162,7 @@ void printInfo(Queue Q);
 Header file queue.h mendefinisikan struktur dan operasi dasar untuk mengelola queue berbasis array statis berukuran tetap. Struktur Queue memiliki tiga atribut utama: head sebagai indeks elemen depan, tail sebagai indeks elemen belakang, serta count untuk menghitung jumlah elemen saat ini. Array info digunakan untuk menyimpan data dengan batas maksimal MAX_QUEUE. File ini juga mendeklarasikan beberapa fungsi penting seperti createQueue untuk inisialisasi, isEmptyQueue dan isFullQueue untuk memeriksa kondisi queue, enqueue untuk menambah elemen, dequeue untuk menghapus elemen, serta printInfo untuk menampilkan isi queue. Ini menjadi blueprint operasi queue di program utama.
 
 **-Output-**
-![](output/output6.png)
+![](output/1.png)
 
 
 ## 5. Unguided
@@ -235,7 +235,7 @@ void printInfo(Queue Q) {
 Kode ini berisi implementasi lengkap dari operasi queue berbasis array statis. Fungsi createQueue menginisialisasi queue dengan nilai head dan tail -1 sebagai tanda kosong. isEmptyQueue dan isFullQueue digunakan untuk memeriksa apakah queue sedang kosong atau penuh. Operasi enqueue menambahkan elemen baru di posisi tail dan menangani kondisi ketika queue masih kosong. Sebaliknya, dequeue menghapus elemen pertama dengan menggeser seluruh isi array satu langkah ke kiri, kemudian menurunkan nilai tail. Jika elemen terakhir dihapus, sistem mengatur queue kembali kosong. Fungsi printInfo menampilkan posisi head–tail serta isi queue secara berurutan.
 
 **-Output-**
-![](output/output6.png)
+![](output/ug1.png)
 
 
 ### 5.2 Unguided 2
@@ -303,7 +303,7 @@ void printInfo(Queue Q) {
 Kode ini mengimplementasikan queue linear berbasis array yang lebih efisien karena tidak lagi melakukan shifting saat elemen di‐dequeue. Fungsi createQueue mengatur awal queue dalam keadaan kosong, sedangkan isEmptyQueue memeriksa dua kondisi: tail = -1 atau head melewati tail. Fungsi isFullQueue mengecek apakah tail sudah mencapai batas array. Operasi enqueue menambah elemen di posisi tail, dan jika queue kosong, head diinisialisasi ke 0. Operasi dequeue cukup menaikkan nilai head tanpa menggeser elemen, menjadikannya lebih cepat. Ketika head melewati tail, queue direset kembali. Fungsi printInfo menampilkan posisi head–tail dan isi queue.
 
 **-Output-**
-![](output/output6.png)
+![](output/ug2.png)
 
 
 
@@ -364,11 +364,12 @@ void printInfo(Queue Q) {
 **-Penjelasan Umum-**
 Kode ini mengimplementasikan circular queue menggunakan array, sehingga ruang dapat digunakan kembali tanpa perlu shifting data. Queue diinisialisasi dengan head dan tail bernilai 0, menandakan posisi awal. Fungsi isEmptyQueue menentukan queue kosong ketika head dan tail sama, sedangkan isFullQueue memeriksa apakah indeks tail yang berikutnya akan bertemu head, menandakan penuh. Pada enqueue, elemen baru disimpan pada posisi tail dan indeks tail digeser melingkar menggunakan operasi modulo. Sebaliknya, dequeue mengambil elemen pada head lalu memajukan indeks head. Fungsi printInfo menampilkan seluruh isi queue dengan iterasi melingkar hingga mencapai posisi tail.
 **-Output-**
-![](output/output6.png)
+![](output/ug3.png)
 
 ## 6. Kesimpulan
 perkembangan dari struktur data sederhana menuju bentuk yang lebih efisien. Dimulai dari queue statis yang masih melakukan shifting pada operasi dequeue, kemudian diperbaiki menjadi queue linear yang hanya menggeser indeks, hingga akhirnya mencapai circular queue yang mampu memanfaatkan ruang array secara optimal tanpa pemborosan memori. Setiap versi tetap mengikuti prinsip dasar FIFO dan menggunakan operasi inti seperti enqueue, dequeue, isEmpty, dan isFull. Melalui ketiga pendekatan ini, terlihat bagaimana desain queue dapat disesuaikan untuk meningkatkan efisiensi waktu dan ruang dalam pemrosesan data.
 
 ## 7. Referensi
 1. https://www.programiz.com/cpp-programming/online-compiler/
+
 2. https://www.onlinegdb.com/online_c++_compiler
