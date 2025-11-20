@@ -190,7 +190,7 @@ void getInputStream(Stack &S);
 File stack.h berfungsi sebagai deklarasi struktur dan fungsi‐fungsi yang digunakan untuk mengelola stack. Di dalamnya ditentukan nilai maksimum elemen stack (MaxEl = 20), nilai penanda kosong (Nil = -1), serta tipe data elemen (infotype, berupa integer). Struktur Stack menyimpan array sebagai wadah data dan variabel TOP sebagai penanda posisi elemen teratas. File ini juga mendeklarasikan berbagai operasi penting seperti membuat stack (CreateStack), mengecek kondisi kosong atau penuh, menambah data (Push), menghapus data (Pop), menampilkan isi stack, membalik urutan elemen (balikStack), menambah elemen secara terurut naik (pushAscending), serta membaca input sebagai stream angka (getInputStream). Dengan header ini, seluruh fungsi dapat digunakan di file lain tanpa perlu mendefinisikannya ulang.
 
 **-Output-**
-![](output/output6.png)
+![](Output/Output_main.png)
 
 
 ## 5. Unguided
@@ -232,7 +232,7 @@ int main() {
 Program ini digunakan untuk mendemonstrasikan cara kerja stack menggunakan fungsi‐fungsi yang sudah didefinisikan sebelumnya. Pertama, program membuat stack baru bernama S melalui CreateStack(S). Setelah itu, beberapa nilai dimasukkan ke dalam stack menggunakan Push, dan beberapa kali elemen teratas dihapus menggunakan Pop, sehingga isi stack berubah mengikuti prinsip LIFO. Program kemudian menampilkan isi stack sebelum dibalik menggunakan printInfo(S). Setelah itu, fungsi balikStack(S) dipanggil untuk membalik urutan seluruh elemen dalam stack. Hasilnya kembali ditampilkan sehingga terlihat perbedaan antara kondisi stack sebelum dan sesudah dibalik.
 
 **-Output-**
-![](output/output6.png)
+![](Output/Unguided1.png)
 
 
 ### 5.2 Unguided 2
@@ -264,7 +264,7 @@ int main() {
 Program ini menunjukkan cara memasukkan data ke dalam stack secara terurut naik menggunakan fungsi pushAscending. Pertama, stack S dibuat kosong dengan CreateStack(S). Setiap nilai yang dimasukkan—3, 4, 8, 2, 3, dan 9—tidak langsung ditempatkan di atas, tetapi disisipkan pada posisi yang tepat sehingga isi stack selalu dalam urutan ascending. Setelah semua nilai dimasukkan, program menampilkan isi stack menggunakan printInfo(S). Selanjutnya, program memanggil balikStack(S) untuk membalik seluruh susunan elemen sehingga urutannya menjadi kebalikan dari sebelumnya. Hasil akhir kemudian dicetak kembali agar terlihat perbedaan susunannya.
 
 **-Output-**
-![](output/output6.png)
+![](Output/Unguided2.png)
 
 
 
@@ -294,11 +294,12 @@ int main()
 Program ini berfungsi untuk membaca input berupa deretan angka dari pengguna, kemudian memasukkannya ke dalam stack satu per satu menggunakan fungsi getInputStream. Pertama, stack S dibuat dalam keadaan kosong melalui CreateStack(S). Ketika program dijalankan, pengguna diminta memasukkan angka pada satu baris, dan setiap karakter angka akan langsung dimasukkan ke stack dalam urutan kemunculannya. Setelah itu, printInfo(S) menampilkan isi stack sesuai data yang masuk. Program kemudian menampilkan pesan “balik stack” dan memanggil fungsi balikStack(S) untuk membalik urutan elemen pada stack. Terakhir, isi stack setelah dibalik kembali dicetak untuk menunjukkan hasil perubahannya.
 
 **-Output-**
-![](output/output6.png)
+![](Output/Unguided3.png)
 
 ## 6. Kesimpulan
 Stack merupakan struktur data sederhana namun sangat penting karena bekerja dengan prinsip LIFO, sehingga cocok untuk proses yang membutuhkan pengambilan data terakhir terlebih dahulu. Dari program yang kamu buat, terlihat bagaimana operasi dasar seperti push, pop, dan pengecekan kondisi stack digunakan untuk mengatur data. Penambahan fungsi seperti pushAscending, balikStack, dan getInputStream menunjukkan bahwa stack dapat dimodifikasi sesuai kebutuhan, baik untuk menjaga urutan maupun membalik isi data. Secara keseluruhan, penggunaan stack membantu pengolahan informasi menjadi lebih teratur, efisien, dan mudah diimplementasikan dalam berbagai algoritma.
 
 ## 7. Referensi
 1. https://www.programiz.com/cpp-programming/online-compiler/
+
 2. https://www.onlinegdb.com/online_c++_compiler
