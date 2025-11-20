@@ -190,7 +190,7 @@ void getInputStream(Stack &S);
 File stack.h berfungsi sebagai deklarasi struktur dan fungsi‐fungsi yang digunakan untuk mengelola stack. Di dalamnya ditentukan nilai maksimum elemen stack (MaxEl = 20), nilai penanda kosong (Nil = -1), serta tipe data elemen (infotype, berupa integer). Struktur Stack menyimpan array sebagai wadah data dan variabel TOP sebagai penanda posisi elemen teratas. File ini juga mendeklarasikan berbagai operasi penting seperti membuat stack (CreateStack), mengecek kondisi kosong atau penuh, menambah data (Push), menghapus data (Pop), menampilkan isi stack, membalik urutan elemen (balikStack), menambah elemen secara terurut naik (pushAscending), serta membaca input sebagai stream angka (getInputStream). Dengan header ini, seluruh fungsi dapat digunakan di file lain tanpa perlu mendefinisikannya ulang.
 
 **-Output-**
-![](output/output6.png)
+![](Output/Output_main.png)
 
 
 ## 5. Unguided
@@ -301,4 +301,5 @@ Stack merupakan struktur data sederhana namun sangat penting karena bekerja deng
 
 ## 7. Referensi
 1. https://www.programiz.com/cpp-programming/online-compiler/
+
 2. https://www.onlinegdb.com/online_c++_compiler
