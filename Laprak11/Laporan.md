@@ -341,7 +341,7 @@ Program tersebut merupakan contoh penerapan multiple linked list yang terdiri da
 
 Setelah seluruh data dimasukkan, fungsi printInfo digunakan untuk menampilkan isi multilinked list, yaitu data induk beserta anak-anaknya. Program kemudian menghapus node anak terakhir dari induk pertama menggunakan fungsi deleteLastAnak, lalu menampilkan kembali isi list untuk memperlihatkan perubahan yang terjadi. Dengan demikian, program ini menunjukkan proses penambahan, penampilan, dan penghapusan data pada struktur multiple linked list.
 **-Output-**
-
+![](Output/Unguided1.png)
 
 
 ### 5.2 Unguided 2
@@ -395,4 +395,5 @@ bahwa struktur data circular single linked list dapat diimplementasikan dengan b
 
 ## 7. Referensi
 1. https://www.programiz.com/cpp-programming/online-compiler/
+
 2. https://www.onlinegdb.com/online_c++_compiler
